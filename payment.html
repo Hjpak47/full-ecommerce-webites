@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> E-Commerce website(Shop all your regular items at 1 place)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    
+
+</head>
+<body>
+
+    <section id="header">
+        <a href="#"><img src="img/BLUNT.png" height="40px" width="80px" class="logo" alt="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
+                <li><a href="profile.html"><i class="fa fa-user"></i></a></li>
+            </ul>
+        </div>
+        
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    
+    </section>
+
+
+
+
+    <section id="payment" class="payment-header">
+        <h5>Order Summary</h5>
+        <div class="subscribe-pro">
+            <div class="title-header">
+                <h1 class="payment-heading">Subscribe to <span1>M G</span1> <span2>HUB</span2> <span>pro+</span></h1>
+            </div>
+
+            <div class="subscribe-form">
+                <button id="per-month" onclick="click()">
+                    <div  class="time-period">
+                    
+                        <form action=""> 
+                            <input id="monthly-radio" type="radio" disabled>  
+                            <h3>Monthly</h3>
+                            <h6>ONLY</h6>
+                            <p><span class="bold">₹</span> 475/month</p>
+                            <p style="text-decoration: line-through;"><span class="bold">₹</span> 499/month</p>
+                            
+                        </form>
+                        <div id="discount-box1">
+                            <p1>save ₹ 24/-</p1>
+                        </div>
+                    </div>
+                </button>
+
+                <button id="per-year" onclick="click()">
+                    <div  class="time-period">
+                        <form action="">
+                            <input id="yearly-radio" type="radio" disabled>
+                            <h3>Annualy</h3>
+                            <h6>ONLY</h6>
+                            <p><span class="bold">₹</span> 1999/year</p>
+                            <p style="text-decoration: line-through;"><span class="bold">₹</span> 5999/year</p>
+                            
+                        </form>
+                        <div id="discount-box2">
+                            <p1>save ₹ 4000/-</p1>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="billing">
+            <div id="empty" class="empty">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Discount</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>---</td>
+                    </tr>
+                </table>
+
+                <button id="empty-upgrade" class="normal">Upgrade</button>
+            </div>
+            <div id="per-month-bill" class="billing-table">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>₹ 499/-</td>
+                    </tr>
+                    <tr>
+                        <td>Discount</td>
+                        <td>₹ 24/-</td>
+                    </tr>
+                    <tr>
+                        <td>Access</td>
+                        <td>30 Days</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>₹ 475/-</td>
+                    </tr>
+                </table>
+
+                <button id="per-month-bill-upgrade" class="normal">Upgrade</button>
+
+            </div>
+
+            <div id="per-year-bill" class="billing-table">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>₹ 5999/-</td>
+                    </tr>
+                    <tr>
+                        <td>Discount</td>
+                        <td>₹ 4000/-</td>
+                    </tr>
+                    <tr>
+                        <td>Access</td>
+                        <td>12 Months * 30 Days</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>₹ 1999/-</td>
+                    </tr>
+                </table>
+                <button id="per-year-bill-upgrade" class="normal">Upgrade</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="card-payment" class="main">
+        <div class="box">
+            <div class="title">
+                <h2>Card Payment</h2>
+            </div>
+            
+    
+            <div class="card-details">
+                <div class="card">
+                    <img src="img/pay/pay.png" alt="">
+                </div>
+                <div class="card-form"> 
+                    <form action="">
+                        <div id="names-on-card">
+                            <label for="card-number">Card Holder :</label>
+                            <input type="text" placeholder="John Doe">
+                        </div>
+                        
+                        <div id="names-on-card">
+                            <label for="card-number">Card Number :</label>
+                            <input type="number" placeholder="1234 5678 9012 3456" minlength="16" maxlength="16">
+                        </div>
+                        <div id="names-on-card">
+                            <label for="exp-number">Expiry Months :</label>
+                            <select id="months">
+                                <option disabled>Select Months</option>
+                                <option id="January">January</option>
+                                <option id="February">February</option>
+                                <option id="March">March</option>
+                                <option id="April">April</option>
+                                <option id="May">May</option>
+                                <option id="June">June</option>
+                                <option id="July">July</option>
+                                <option id="August">August</option>
+                                <option id="September">September</option>
+                                <option id="October">October</option>
+                                <option id="November">November</option>
+                                <option id="December">December</option>
+
+                            </select>
+                            
+                        </div>
+                        <div id="names-on-card">
+                            <label for="card-number">Expiry Years :</label>
+                            <select id="years">
+                                <option disabled>Select Years</option>
+                                <option id="2020">2020</option>
+                                <option id="2021">2021</option>
+                                <option id="2022">2022</option>
+                                <option id="2023">2023</option>
+                                <option id="2024">2024</option>
+
+                                <option id="2025">2025</option>
+                                <option id="2026">2026</option>
+                                <option id="2027">2027</option>
+                                <option id="2028">2028</option>
+                                <option id="2029">2029</option>
+
+                                <option id="2030">2030</option>
+                                <option id="2031">2031</option>
+                                <option id="2032">2032</option>
+                                <option id="2033">2033</option>
+                                <option id="2034">2034</option>
+                                <option id="2035">2035</option>
+
+                            </select>
+                        </div>
+                        <div id="names-on-card">
+                            <label for="card-number">CVV :</label>
+                            <input type="password" placeholder="000" maxlength="3" minlength="3">
+                        </div>
+                    </form> 
+                </div>
+            </div>
+            <div id="pay-btn" class="buttons">
+                <a href="#"><button id="make-payment" type="submit">Pay</button></a>
+            </div>
+        </div>
+       
+    </section>
+
+   
+
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/BLUNT.png" height="60px" width="80px" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> kankarbagh , Patna</p>
+            <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="login.html">Log In</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="cart.html">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <a href="payment.html"><img src="img/pay/pay.png" alt=""></a>
+        </div>
+        <div class="copyright">
+            <p>© 2024, M G HUB</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+   
+   
+</body>
+</html>
